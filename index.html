@@ -18,6 +18,11 @@
       rel="stylesheet"
       type="text/css"
     />
+    <!-- Fontawesome CDN-->
+    <script
+      src="https://kit.fontawesome.com/5166c358c8.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Hope Forward | Home</title>
   </head>
@@ -68,6 +73,7 @@
 
           <div class="navbar-end">
             <img class="w-5 mr-2" src="./assets/coin.png" alt="" />€<span
+              id="exist-Amount"
               class="font-semibold"
               >2000</span
             >
@@ -76,7 +82,7 @@
       </nav>
     </header>
 
-    <main class="max-w-6xl mx-auto">
+    <main id="wrong-Pop" class="max-w-6xl mx-auto">
       <!-- Button section -->
       <section class="flex justify-center items-center my-20">
         <button id="donation-Btn" class="btn bg-color mr-4">Donation</button>
@@ -96,7 +102,7 @@
               <div>
                 <button class="btn text-black" disabled="disabled">
                   <img src="./assets/coin.png" alt="" />
-                  €<span>0</span>
+                  €<span id="ukraineDonation">0</span>
                 </button>
                 <h1 class="text-xl font-bold mt-4">
                   War in Ukraine: Support for children and families
@@ -112,12 +118,35 @@
                 </p>
 
                 <input
+                  id="donation-Amount1"
                   type="text"
-                  placeholder="Write Donation Amount"
+                  placeholder="Write"
                   class="input w-full"
                 />
                 <br />
-                <button class="btn btn-block bg-color font-bold mt-4">
+
+                <dialog
+                  id="my_modal_5"
+                  class="modal modal-bottom sm:modal-middle"
+                >
+                  <div class="modal-box">
+                    <h3 class="text-lg text-red-500 font-bold text-center">
+                      <i class="fa-solid fa-triangle-exclamation"></i> Wrong!
+                    </h3>
+                    <p class="py-4 text-center">Enter a correct number</p>
+                    <div class="modal-action">
+                      <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn btn-error">OK</button>
+                      </form>
+                    </div>
+                  </div>
+                </dialog>
+
+                <button
+                  id="donationBtn"
+                  class="btn btn-block bg-color font-bold mt-4"
+                >
                   Donate Now
                 </button>
               </div>
@@ -149,11 +178,13 @@
                 </p>
 
                 <input
+                  id="donation-Amount2"
                   type="text"
                   placeholder="Write Donation Amount"
                   class="input w-full"
                 />
                 <br />
+
                 <button class="btn btn-block bg-color font-bold mt-4">
                   Donate Now
                 </button>
