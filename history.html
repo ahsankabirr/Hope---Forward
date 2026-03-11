@@ -30,6 +30,73 @@
     }
   </style>
   <body class="lexend_font">
-    
+    <header>
+      <!-- Nav -->
+      <nav>
+        <div class="navbar bg-[#F9F7F3] shadow-sm px-0 lg:px-40">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="-1"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+              >
+                <h3 class="font-bold ml-3">Hope Forward</h3>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-xl bg-color">Blog</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <img class="w-8" src="./assets/logo.png" alt="" />
+            <h3 class="font-bold ml-3">Hope Forward</h3>
+          </div>
+
+          <div class="navbar-end">
+            <img class="w-5 mr-2" src="./assets/coin.png" alt="" />€<span
+              class="font-semibold"
+              >2000</span
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="max-w-6xl mx-auto">
+      <!-- Button section -->
+      <section class="flex justify-center items-center my-20">
+        <button id="donation-Btn" class="btn bg-color mr-4">Donation</button>
+        <button id="history-Btn" class="btn btn-outline">History</button>
+      </section>
+
+      <!-- History section -->
+      <section>
+        <div
+          class="p-5 rounded-xl bg-base-100 border-solid border-2 border-gray-300"
+        >
+          <h1 class="font-bold">
+            96500 Taka is Donated for famine-2024 at Feni, Bangladesh
+          </h1>
+          <p class="text-gray-400 font-light mt-3">
+            Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)
+          </p>
+        </div>
+      </section>
+    </main>
+    <script src="./js/redirect.js"></script>
   </body>
 </html>
