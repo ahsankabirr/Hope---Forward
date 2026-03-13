@@ -116,7 +116,7 @@
                   resources including safe water, electricity, and other
                   necessities.
                 </p>
-
+                <div id="alert-text"></div>
                 <input
                   id="donation-Amount1"
                   type="text"
@@ -124,24 +124,8 @@
                   class="input w-full"
                 />
                 <br />
-
-                <dialog
-                  id="my_modal_5"
-                  class="modal modal-bottom sm:modal-middle"
-                >
-                  <div class="modal-box">
-                    <h3 class="text-lg text-red-500 font-bold text-center">
-                      <i class="fa-solid fa-triangle-exclamation"></i> Wrong!
-                    </h3>
-                    <p class="py-4 text-center">Enter a correct number</p>
-                    <div class="modal-action">
-                      <form method="dialog">
-                        <!-- if there is a button in form, it will close the modal -->
-                        <button class="btn btn-error">OK</button>
-                      </form>
-                    </div>
-                  </div>
-                </dialog>
+                
+                <div id="success"></div>
 
                 <button
                   id="donationBtn"
